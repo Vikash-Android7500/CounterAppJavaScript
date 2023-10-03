@@ -22,17 +22,16 @@ body{
 }
 
 .container{
-    text-align: center;
-}
-
-h1{
-  margin-bottom: 30%;
+     display: flex;
+     flex-direction: column;
+     text-align: center;
+     gap: 1rem;
 }
 
 .button-container{
      display: flex;
-     gap: 40px;
-     margin-top: 40px;
+     align-items: center;
+     justify-content: space-evenly;
 }
 
 .zero{
@@ -41,23 +40,22 @@ h1{
      color: black;
      font-weight: bolder;
      font-size: 4rem;
-     border-radius: 8px 40px;
+     border-radius: 8px;
 }
 
 .btn{
      border: none;
-     padding: 32px;
+     padding: 2rem;
      border-radius: 4px;
-     font-family: Verdana, Geneva, Tahoma, sans-serif;
      text-transform: uppercase;
-     font-weight: bold;
-     border-radius: 32px;
+     border-radius: 100%;
      box-shadow: 0px 0px 20px gray;
-     transition: 0.3s ease;
+     transition: 0.2s ease-in;
 }
 
 .btn1{
-     background-image: url(./images/M.png);    
+     background-image: url(./images/M.png); 
+        
 }
 
 .btn2{
@@ -66,7 +64,6 @@ h1{
 
 .btn3 {
      background-image: url(./images/P.png);
-     /* background-color: #4bae4f; */
 }
 
 .btn1,
@@ -77,23 +74,6 @@ h1{
      background-size: cover;
 }
 
-.btn1,
-.btn3 {
-   position: relative;
-   bottom: 2.5cm;
-} 
-
-.btn1{
-  position: relative;
- 
-}
-
-
-.btn3{
-     position: relative;
-     left: 28px;
-}
-
 .btn:active{
-   transform: scale(1.5);
+   transform: scale(1.1);
 }
